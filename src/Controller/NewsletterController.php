@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace BitBag\SyliusMailChimpPlugin\Controller;
 
-use FOS\RestBundle\Controller\FOSRestController;
+use FOS\RestBundle\Controller\AbstractFOSRestController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-final class NewsletterController extends FOSRestController
+final class NewsletterController extends AbstractFOSRestController
 {
     public function subscribeAction(Request $request)
     {
